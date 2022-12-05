@@ -6,6 +6,6 @@ date: 2022-11-24
 
 ## Vue
 
-- [Video :: Introduction to Vue 3](./vue/courses/vue-3.md)
+- [Video :: Introduction to Vue 3](vue/courses/vue-3/index.md)
 
 
