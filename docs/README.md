@@ -4,8 +4,7 @@ date: 2022-11-24
 
 # Technical Documentation
 
-## Vue
+- [Vue Courses](vue/index.md)
 
-- [Video :: Introduction to Vue 3](vue/courses/vue-3/index.md)
 
 
