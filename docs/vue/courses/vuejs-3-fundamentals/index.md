@@ -43,44 +43,29 @@ learning how to easily add Vue.js from a [CDN](https://unpkg.com/vue@3) to our
 site we're going to
 take a look at Vue.js enjoyable and automatic reactivity system.
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Shopping List App</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-
-<body>
-
-<div id="shopping-list">
-    <h1>{{ header }}</h1>
-    <input v-model="header">
-</div>
-
-<script src="https://unpkg.com/vue@3"></script>
-<script>
-
-    Vue.createApp({
-        data() {
-            return {
-                header: 'View is ready to party'
-            }
-        }
-    }).mount('#shopping-list')
-</script>
-</body>
-
-</html>
+```shell
+npm create vite@latest
 ```
 
+> App.vue
+
+```vue
+
+<script setup lang="ts">
+import {ref} from "vue";
+
+const header = ref("Vue is ready to party!")
+</script>
+
+<template>
+  <h1>Header text: {{ header }}</h1>
+  <input v-model="header">
+</template>
+```
 
 <example></example>
 
- <Badge type="tip" text="v2" vertical="top" />
-
+ <Badge type="tip" text="v2" vertical="top"></Badge>
 
 ## 2. Using Vue Devtools with Vue.js 3
 
@@ -90,11 +75,34 @@ The Vue Devtools is an invaluable browser extension to Chrome and Firefox that
 will speed up your development and bug hunting.
 
 Vue Devtools 6 supports Vue 3 and as of right now it's in beta and available for
-[Chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/ljjemllljcmogpfapbkkighbhhppjdbg)
-and [Firefox](https://github.com/vuejs/vue-devtools/releases/download/v6.0.0-beta.8/vuejs_devtools_beta-6.0.0.8-an+fx.xpi)
-.
+
+- [Chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/ljjemllljcmogpfapbkkighbhhppjdbg)
+  and
+- [Firefox](https://github.com/vuejs/vue-devtools/releases/download/v6.0.0-beta.8/vuejs_devtools_beta-6.0.0.8-an+fx.xpi)
+  .
 
 ## 3. Vue.js 3 template Syntax and Expressions
+
+In the previous lesson, we briefly touched upon the templating syntax to bind
+Vue data to the DOM.
+
+In this lesson, we'll dive deeper into Vue's templating syntax and learn how to
+run JavaScript expressions directly in the template.
+
+> App.vue
+```vue
+<script setup lang="ts">
+import {ref} from "vue";
+
+const header = ref("Shopping list App")
+</script>
+
+<template>
+  <h1>{{ header || "Welcome" }}</h1>
+  <input v-model="header">
+</template>
+
+```
 
 ## 4. List Rendering in Vue 3
 
