@@ -1,7 +1,7 @@
 ---
 lang: en-US
-title: Title of this page
-description: Description of this page
+title: Vue Courses
+description: vueschool.io; frontendmasters.com - Vue Courses
 ---
 
 # Vue
@@ -12,4 +12,9 @@ description: Description of this page
 
 ## [vueschool.io](https://vueschool.io)
 
-- [Vue.js 3 Fundamentals with the Options API](courses/vuejs-3-fundamentals/index.md)
+### Learning paths
+
+#### Beginner
+
+1. [Vue.js 3 Fundamentals with the Options API](courses/vuejs-3-fundamentals/index.md)
+2. ff

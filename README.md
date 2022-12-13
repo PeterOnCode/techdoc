@@ -1,3 +1,2 @@
-# techdoc
-Technical Documentation
+# Technical Documentation
 
